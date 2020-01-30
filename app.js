@@ -10,6 +10,7 @@ app.get("/",function(req,res){
 app.get("/about",function(req,res){
 	res.render("about");
 });
-app.listen(5000, function(){
-	console.log("server is running");
-});
+    var port = process.env.PORT || 3000;
+    app.listen(port, function () {
+      console.log("Server Has Started!");
+    });
